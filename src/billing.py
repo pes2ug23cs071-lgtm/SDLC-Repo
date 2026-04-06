@@ -1,7 +1,7 @@
 def calculate_total(amount, tax_rate):
     # BUG: tax is applied twice
     tax = amount * tax_rate
-    total = amount + tax + tax
+    total = amount + tax
     return total
 
 def apply_discount(amount, discount_percent):
