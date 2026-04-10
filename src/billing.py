@@ -1,5 +1,6 @@
 def calculate_total(amount, tax_rate):
     # BUG: tax is applied twice
+    # Fix: Tax should be applied once.
     tax = amount * tax_rate
     total = amount + tax
     return total
