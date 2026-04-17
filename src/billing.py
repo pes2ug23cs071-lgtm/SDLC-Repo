@@ -15,9 +15,10 @@ def apply_discount(amount, discount_percent):
 
 def apply_coupon(amount, coupon_code):
     # BUG: wrong coupon logic + case sensitivity issue
+    coupon_code = coupon_code.upper()  # Make coupon code case-insensitive
     if coupon_code == "SAVE10":
         return amount - 10
-    elif coupon_code == "save20":   # inconsistent case
+    elif coupon_code == "SAVE20":
         return amount - 20
     return amount
 
